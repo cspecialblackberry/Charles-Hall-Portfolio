@@ -11,7 +11,7 @@ const Nav = () => {
     return(
         <> 
             <StyledFlex>
-                <StyledLink>About Me</StyledLink>
+                <StyledLink to='/About'>About Me</StyledLink>
                 <StyledLink>Portfolio</StyledLink>
                 <StyledLink>Contact</StyledLink>
                 <StyledLink>Resume</StyledLink>
