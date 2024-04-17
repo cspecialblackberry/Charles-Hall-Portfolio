@@ -1,11 +1,11 @@
-import { StyledFlex } from './header'
+import { HeaderFlex } from './header'
 import { Link, chakra} from '@chakra-ui/react'
 import { Link as ReactRouterLink, useLocation } from 'react-router-dom'
 
 const StyledLink = chakra(Link, {
     baseStyle: {
         padding: '5px',
-        textDecoration: 'underline'
+        _hover: {textDecoration: 'underline'}
     }
 })
 
@@ -13,12 +13,12 @@ const Nav = () => {
     const currentPage = useLocation().pathname
     return(
         <> 
-            <StyledFlex>
+            <HeaderFlex>
                 <StyledLink as= {ReactRouterLink} to='/About' className={currentPage==='/About' ? 'currentLink' : ''}>About Me</StyledLink>
                 <StyledLink as= {ReactRouterLink} to='/Portfolio' className={currentPage==='/Portfolio' ? 'currentLink' : ''}>Portfolio</StyledLink>
                 <StyledLink as= {ReactRouterLink} to='/Contact' className={currentPage==='/Contact' ? 'currentLink' : ''} >Contact</StyledLink>
                 <StyledLink as= {ReactRouterLink} to='/Resume' className={currentPage==='/Resume' ? 'currentLink' : ''}>Resume</StyledLink>
-            </StyledFlex>
+            </HeaderFlex>
         </>
     )
 }

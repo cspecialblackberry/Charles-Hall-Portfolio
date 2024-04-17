@@ -1,9 +1,9 @@
-import { Flex, Heading, chakra, Link } from '@chakra-ui/react'
+import { Flex, Heading, chakra} from '@chakra-ui/react'
 import Nav from './Nav'
-import { Link as ReactRouterLink, useLocation } from 'react-router-dom'
+import { Link as ReactRouterLink } from 'react-router-dom'
 
 
-export const StyledFlex = chakra(Flex, {
+export const HeaderFlex = chakra(Flex, {
     baseStyle: {
         backgroundColor: 'red',
         padding: '30px',
@@ -14,10 +14,10 @@ export const StyledFlex = chakra(Flex, {
 export const Header = () => {
     return (
         <>
-            <StyledFlex>
+            <HeaderFlex>
                 <Heading size='4xl' as={ReactRouterLink} to='/'>Charles Hall</Heading>
                 <Nav></Nav>
-            </StyledFlex>
+            </HeaderFlex>
         </>
     )
 }

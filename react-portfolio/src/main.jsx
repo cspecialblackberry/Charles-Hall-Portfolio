@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { ChakraProvider } from '@chakra-ui/react'
 
+import { sites } from './assets/sites.js'
+
 import App from './App.jsx'
 import About from './pages/About.jsx'
 import Home from './pages/Home.jsx'
@@ -36,7 +38,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/Portfolio',
-        element: <Portfolio />,
+        element: <Portfolio sites={sites}/>,
       },
       {
         path: '/Resume',
