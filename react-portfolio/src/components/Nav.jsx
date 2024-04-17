@@ -13,10 +13,10 @@ const Nav = () => {
     return(
         <> 
             <StyledFlex>
-                <StyledLink as= {ReactRouterLink} to='/About' className='hello'>About Me</StyledLink>
-                <StyledLink>Portfolio</StyledLink>
-                <StyledLink>Contact</StyledLink>
-                <StyledLink>Resume</StyledLink>
+                <StyledLink as= {ReactRouterLink} to='/About' >About Me</StyledLink>
+                <StyledLink as= {ReactRouterLink} to='/Portfolio' >Portfolio</StyledLink>
+                <StyledLink as= {ReactRouterLink} to='/Contact' >Contact</StyledLink>
+                <StyledLink as= {ReactRouterLink} to='/Resume' >Resume</StyledLink>
             </StyledFlex>
         </>
     )
