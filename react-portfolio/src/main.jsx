@@ -7,6 +7,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 
 import About from './pages/About.jsx'
 import Home from './pages/Home.jsx'
+import ErrorPage from './pages/Error.jsx'
 
 const router = createBrowserRouter([
   {
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
                   <App />
                 </ChakraProvider>
             </React.StrictMode>,
-    // errorElement: <Error />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
