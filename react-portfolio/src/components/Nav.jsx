@@ -5,7 +5,9 @@ import { Link as ReactRouterLink, useLocation } from 'react-router-dom'
 const StyledLink = chakra(Link, {
     baseStyle: {
         padding: '5px',
-        _hover: {textDecoration: 'underline'}
+        _hover: {textDecoration: 'underline'},
+        textAlign: 'center',
+        alignSelf: 'center',
     }
 })
 

@@ -1,7 +1,5 @@
-import { Input } from '@chakra-ui/react'
-
 const handleClickAway = (event) => {
-    if(!event.target.value){
+    if (!event.target.value) {
         alert('form required')
     }
 }
@@ -9,10 +7,11 @@ const handleClickAway = (event) => {
 export default function Contact() {
     return (
         <>
-            <div>
-                <Input placeholder='Enter your name' onClickAway={handleClickAway}></Input>
-                <Input placeholder='Enter a valid email address'></Input>
-                <Input placeholder='Enter your message' ></Input>
+            <div className="email-form">
+                <input type="text" placeholder="Enter Your Name Here"></input>
+                <input type="text" placeholder="Enter Your Email Address Here"></input>
+                <textarea rows='10' placeholder="Enter Your Email Content Here"></textarea>
+                <button>Send</button>
             </div>
         </>
     )

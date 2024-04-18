@@ -1,28 +1,33 @@
-
-.currentLink {
-    background-color: pink;
+main{
+    height: 100%;
+    background-color: darkgray;
 }
 
-.currentLink :hover {
-    text-decoration: none;
+.currentLink {
+    background-color: darkgrey;
+    border-radius: 15px;
 }
 
 .about-h1 {
     font-size: 42px;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
 }
 
 .about-div {
     font-size: large;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 30px;
 }
 
 .about-div p {
     align-self: center;
-    background-color: lightblue;
     padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 10px;
+
 }
 
 .about-div img {
@@ -37,6 +42,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 20px;
+    padding-bottom: 125px;
 }
 
 .site-div{
@@ -80,3 +86,40 @@
     font-weight: 600;
 }
 
+.email-form{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    justify-content: space-between;
+    height: auto;
+    align-items: center;
+}
+
+.email-form input, textarea{
+    width: 95%;
+    height: auto;
+    padding: 5px;
+    margin: 10px;
+}
+
+.email-form button{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100px;
+    background-color: red;
+}
+
+footer{
+    display: flex;
+    background-color: red;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0px;
+}
+
+footer a {
+    text-decoration: underline;
+}

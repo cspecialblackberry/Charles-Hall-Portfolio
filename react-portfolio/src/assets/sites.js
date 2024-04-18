@@ -1,5 +1,6 @@
 export const sites = [
     {
+        id: 1,
         name: 'MediMinder',
         link: 'https://mediminder-e3e3cf63329a.herokuapp.com/',
         repo: 'https://github.com/cspecialblackberry/mediminder-app',
@@ -7,6 +8,7 @@ export const sites = [
         img: 'src/assets/mediminder.png',
     },
     {
+        id: 2,
         name: 'QuickChef',
         link: 'https://quick-chef-app.onrender.com/',
         repo: 'https://github.com/caseynewman/quick-chef-app',
@@ -14,6 +16,7 @@ export const sites = [
         img: 'src/assets/QuickChef.png',
     },
     {
+        id: 3,
         name: 'JavaScript Brain Trip!',
         link: 'https://cspecialblackberry.github.io/JavaScript-Quiz-Game/',
         repo: 'https://github.com/cspecialblackberry/JavaScript-Quiz-Game',
@@ -21,6 +24,7 @@ export const sites = [
         img: 'src/assets/javascriptBrainTrip.png',
     },
     {
+        id: 4,
         name: 'Weather Forecast',
         link: 'https://cspecialblackberry.github.io/5-Day-Weather-Forecast/',
         repo: 'https://github.com/cspecialblackberry/5-Day-Weather-Forecast',
