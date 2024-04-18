@@ -30,3 +30,38 @@
     padding: 40px;
     background-color: red;
 }
+
+.sites-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.site-div{
+    width: 350px;
+    padding: 20px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.site-div h2{
+    font-size: 40px;
+}
+
+.site-div img{
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.site-div div a{
+    padding: 5px;
+    text-decoration: underline;
+}
+
