@@ -1,5 +1,3 @@
-import { Link, Card, CardHeader, CardBody, Button } from '@chakra-ui/react'
-
 export default function Portfolio({sites}) {
     console.log(sites)
     return(
@@ -23,3 +21,4 @@ export default function Portfolio({sites}) {
         </>
     )
 }
+//todo make site-div own component

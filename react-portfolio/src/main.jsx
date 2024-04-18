@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     path: '/',
     element:
       <React.StrictMode>
-        <ChakraProvider>
+        <ChakraProvider disableGlobalStyle={true}>
           <App />
         </ChakraProvider>
       </React.StrictMode>,

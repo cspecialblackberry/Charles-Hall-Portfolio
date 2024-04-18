@@ -1,11 +1,12 @@
-main{
-    height: 100%;
+body{
     background-color: darkgray;
 }
 
 .currentLink {
     background-color: darkgrey;
+    border: 2px solid darkred;
     border-radius: 15px;
+    text-decoration: underline;
 }
 
 .about-h1 {
@@ -19,6 +20,7 @@ main{
     display: flex;
     justify-content: space-evenly;
     padding: 30px;
+    padding-bottom: 125px;
 }
 
 .about-div p {
@@ -93,9 +95,14 @@ main{
     justify-content: space-between;
     height: auto;
     align-items: center;
+    padding-bottom: 125px;
 }
 
-.email-form input, textarea{
+.input-div{
+    width: 95%;
+}
+
+.input-div input, textarea{
     width: 95%;
     height: auto;
     padding: 5px;
