@@ -7,7 +7,6 @@ import { sites } from './assets/sites.js'
 
 import App from './App.jsx'
 import About from './pages/About.jsx'
-import Home from './pages/Home.jsx'
 import ErrorPage from './pages/Error.jsx'
 import Contact from './pages/Contact.jsx'
 import Portfolio from './pages/Portfolio.jsx'
@@ -26,10 +25,6 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />,
-      },
-      {
-        path: '/About',
         element: <About />,
       },
       {

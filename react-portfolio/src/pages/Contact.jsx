@@ -2,52 +2,89 @@ import { useState } from 'react'
 
 export default function Contact() {
 
-    const [isNameClicked, setIsNameClicked] = useState(false)
+    const [isNameEntered, setIsNameEntered] = useState('')
     const [nameValue, setNameValue] = useState('')
 
-    const handleNameClick = (event) => {
-        setIsNameClicked(isNameClicked => false)
+    const handleNameChange = (event) => {
+        setNameValue(event.target.value)
+        setIsNameEntered(true)
     }
 
-    const [isEmailClicked, setIsEmailClicked] = useState(false)
+    const handleNameBlur = () => {
+        if (!nameValue) {
+            setIsNameEntered(false)
+        } else {
+            setIsNameEntered(true)
+        }
+    }
+
+    const [isEmailEntered, setIsEmailEntered] = useState('')
     const [emailValue, setEmailValue] = useState('')
 
-    const handleEmailClick = (event) => {
-
+    const handleEmailChange = (event) => {
+        setEmailValue(event.target.value)
+        setIsEmailEntered(true)
     }
 
-    const [isMessageClicked, setIsMessageClicked] = useState(false)
+    const handleEmailBlur = () => {
+        if (!emailValue) {
+            setIsEmailEntered(false)
+        } else {
+            setIsEmailEntered(true)
+        }
+    }
+    const [isMessageEntered, setIsMessageEntered] = useState('')
     const [messageValue, setMessageValue] = useState('')
 
-    const handleMessageClick = (event) => {
-
+    const handleMessageChange = (event) => {
+        setMessageValue(event.target.value)
+        setIsMessageEntered(true)
     }
 
+    const handleMessageBlur = () => {
+        if (!messageValue) {
+            setIsMessageEntered(false)
+        } else {
+            setIsMessageEntered(true)
+        }
+    }
 
     return (
         <>
             <div className="email-form">
                 <div className='input-div'>
+                    {isNameEntered === false && <p>Name Field Is Required</p>}
                     <input
                         type="text"
                         placeholder="Enter Your Name Here"
-                        id='name'>
+                        id='name'
+                        autoComplete='off'
+                        onChange={handleNameChange}
+                        onBlur={handleNameBlur}>
                     </input>
                 </div>
 
                 <div className='input-div'>
+                    {isEmailEntered === false && <p>Email Field Is Required</p>}
                     <input
                         type="text"
                         placeholder="Enter Your Email Address Here"
-                        id='email'>
+                        id='email'
+                        autoComplete='off'
+                        onChange={handleEmailChange}
+                        onBlur={handleEmailBlur}>
+                            
                     </input>
                 </div>
 
                 <div className='input-div'>
+                    {isMessageEntered === false && <p>Message Field Is Required</p>}
                     <textarea
                         rows='10'
                         placeholder="Enter Your Email Content Here"
-                        id='message'>
+                        id='message'
+                        onChange={handleMessageChange}
+                        onBlur={handleMessageBlur}>
                     </textarea>
                 </div>
                 <button>Send</button>

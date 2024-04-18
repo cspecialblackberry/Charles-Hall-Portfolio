@@ -16,7 +16,7 @@ const Nav = () => {
     return(
         <> 
             <HeaderFlex>
-                <StyledLink as= {ReactRouterLink} to='/About' className={currentPage==='/About' ? 'currentLink' : ''}>About Me</StyledLink>
+                <StyledLink as= {ReactRouterLink} to='/' className={currentPage==='/' ? 'currentLink' : ''}>About Me</StyledLink>
                 <StyledLink as= {ReactRouterLink} to='/Portfolio' className={currentPage==='/Portfolio' ? 'currentLink' : ''}>Portfolio</StyledLink>
                 <StyledLink as= {ReactRouterLink} to='/Contact' className={currentPage==='/Contact' ? 'currentLink' : ''} >Contact</StyledLink>
                 <StyledLink as= {ReactRouterLink} to='/Resume' className={currentPage==='/Resume' ? 'currentLink' : ''}>Resume</StyledLink>
