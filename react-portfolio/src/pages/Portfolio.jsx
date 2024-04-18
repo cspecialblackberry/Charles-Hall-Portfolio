@@ -4,7 +4,7 @@ export default function Portfolio({sites}) {
     console.log(sites)
     return(
         <>
-        portfolio
+        <h1 style={{fontSize:'40px', textAlign:'center', fontWeight:'600'}}>Check Out My Work!</h1>
         <div className='sites-container'>
         {sites.map((site) => 
             <>
