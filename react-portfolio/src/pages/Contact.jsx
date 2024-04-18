@@ -20,6 +20,7 @@ export default function Contact() {
 
     const [isEmailEntered, setIsEmailEntered] = useState('')
     const [emailValue, setEmailValue] = useState('')
+    const [isValidEmail, setIsValidEmail] = useState(true)
 
     const handleEmailChange = (event) => {
         setEmailValue(event.target.value)
@@ -31,6 +32,8 @@ export default function Contact() {
             setIsEmailEntered(false)
         } else {
             setIsEmailEntered(true)
+            const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g
+            setIsValidEmail(regex.test(emailValue))
         }
     }
     const [isMessageEntered, setIsMessageEntered] = useState('')
@@ -53,7 +56,7 @@ export default function Contact() {
         <>
             <div className="email-form">
                 <div className='input-div'>
-                    {isNameEntered === false && <p>Name Field Is Required</p>}
+                    {isNameEntered === false && <p>Name field is required</p>}
                     <input
                         type="text"
                         placeholder="Enter Your Name Here"
@@ -65,7 +68,8 @@ export default function Contact() {
                 </div>
 
                 <div className='input-div'>
-                    {isEmailEntered === false && <p>Email Field Is Required</p>}
+                    {isEmailEntered === false && <p>Email field is required</p>}
+                    {isValidEmail === false && <p>Please enter a valid email</p>}
                     <input
                         type="text"
                         placeholder="Enter Your Email Address Here"
@@ -73,12 +77,12 @@ export default function Contact() {
                         autoComplete='off'
                         onChange={handleEmailChange}
                         onBlur={handleEmailBlur}>
-                            
+
                     </input>
                 </div>
 
                 <div className='input-div'>
-                    {isMessageEntered === false && <p>Message Field Is Required</p>}
+                    {isMessageEntered === false && <p>Message field is required</p>}
                     <textarea
                         rows='10'
                         placeholder="Enter Your Email Content Here"
