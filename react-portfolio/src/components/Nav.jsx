@@ -1,26 +1,15 @@
-import { HeaderFlex } from './header'
-import { Link, chakra} from '@chakra-ui/react'
-import { Link as ReactRouterLink, useLocation } from 'react-router-dom'
-
-const StyledLink = chakra(Link, {
-    baseStyle: {
-        padding: '10px',
-        _hover: {textDecoration: 'underline'},
-        textAlign: 'center',
-        alignSelf: 'center',
-    }
-})
+import { Link, useLocation } from 'react-router-dom'
 
 const Nav = () => {
     const currentPage = useLocation().pathname
     return(
         <> 
-            <HeaderFlex>
-                <StyledLink as= {ReactRouterLink} to='/' className={currentPage==='/' ? 'currentLink' : ''}>About Me</StyledLink>
-                <StyledLink as= {ReactRouterLink} to='/Portfolio' className={currentPage==='/Portfolio' ? 'currentLink' : ''}>Portfolio</StyledLink>
-                <StyledLink as= {ReactRouterLink} to='/Contact' className={currentPage==='/Contact' ? 'currentLink' : ''} >Contact</StyledLink>
-                <StyledLink as= {ReactRouterLink} to='/Resume' className={currentPage==='/Resume' ? 'currentLink' : ''}>Resume</StyledLink>
-            </HeaderFlex>
+            <nav>
+                <Link to='/' className={currentPage==='/' ? 'currentLink nav-link' : 'nav-link'} >About Me</Link>
+                <Link to='/Portfolio' className={currentPage==='/Portfolio' ? 'currentLink nav-link' : 'nav-link'}>Portfolio</Link>
+                <Link to='/Contact' className={currentPage==='/Contact' ? 'currentLink nav-link' : 'nav-link'}>Contact</Link>
+                <Link to='/Resume' className={currentPage==='/Resume' ? 'currentLink nav-link' : 'nav-link'}>Resume</Link>
+            </nav>
         </>
     )
 }

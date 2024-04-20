@@ -54,6 +54,10 @@ export default function Contact() {
 
     return (
         <>
+            <div className='contact-info'>
+                <p>Email: charliesamhall@icloud.com</p>
+                <p>Phone: (919)-389-2859</p>
+            </div>
             <div className="email-form">
                 <div className='input-div'>
                     {isNameEntered === false && <p>Name field is required</p>}
