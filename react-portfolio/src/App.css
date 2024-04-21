@@ -1,5 +1,11 @@
+:root{
+    --darkgreen: #373d20;
+    --medgreen: #647744;
+    --lightgreen: #80874d;
+}
+
 body{
-    background-color: darkgray;
+    background-color: lightgray;
 }
 
 header{
@@ -7,7 +13,7 @@ header{
     flex-direction: column;
     /* justify-content: space-evenly; */
     height: 160px;
-    background-color: red;
+    background-color: var(--medgreen);
     align-items: center;
 }
 
@@ -24,7 +30,7 @@ nav{
 }
 
 .nav-link{
-    font-size: 18px;
+    font-size: 20px;
     margin: 15px;
     padding: 8px
 }
@@ -34,10 +40,10 @@ nav{
 }
 
 .currentLink {
-    /* background-color: darkgrey; */
+    /* background-color: var(--darkgreen); */
     color: white;
-    border: 2px solid darkred;
-    border-radius: 15px;
+    /* border: 2px solid var(--darkgreen);
+    border-radius: 15px; */
     text-decoration: underline;
     padding-bottom: 6px;
 }
@@ -68,13 +74,14 @@ nav{
 .image-div img {
     height: 260px;
     padding: 40px;
-    background-color: red;
+    background-color: var(--medgreen);
+    border-radius: 30px;
 }
 
 .about-div p {
     align-self: center;
     padding: 20px;
-    border: 1px solid black;
+    border: 1px solid var(--darkgreen);
     border-radius: 20px;
     margin: 10px;
     width: 60%;
@@ -97,7 +104,7 @@ nav{
     width: 350px;
     height: auto;
     padding: 20px;
-    background-color: red;
+    background-color: var(--lightgreen);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,6 +128,7 @@ nav{
 
 .site-div p{
     margin-bottom: 5px;
+    font-weight: 450;
 }
 
 .site-div div {
@@ -156,7 +164,7 @@ nav{
 }
 
 .input-div p{
-    background-color: red;
+    background-color: var(--medgreen);
     font-weight: 500;
     width: fit-content;
     padding: 5px;
@@ -168,18 +176,39 @@ nav{
     height: auto;
     padding: 5px;
     margin: 10px;
+    background-color: oldlace;
 }
 
 .email-form button{
     border: 2px solid black;
     border-radius: 10px;
     width: 100px;
-    background-color: red;
+    background-color: var(--lightgreen);
+    padding: 7px;
+    font-size: 18px;
+}
+
+.resume{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.resume h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.resume h2{
+    font-size: 30px;
+    text-decoration: underline;
+    margin-top: 25px;
 }
 
 footer{
     display: flex;
-    background-color: red;
+    background-color: var(--medgreen);
     height: 45px;
     width: 100%;
     align-items: center;
