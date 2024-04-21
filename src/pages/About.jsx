@@ -5,7 +5,7 @@ export default function About() {
       <div className="about-div">
         <div className="image-div">
           <h1 className="about-h1">About Charles!</h1>
-          <img src='../../public/avataaars.png'></img>
+          <img src='/avataaars.png'></img>
         </div>
         <p>Charles is a full stack web developer based in the Raleigh, NC area. He is 
           currently enrolled in the full-stack coding bootcamp at UNC Chapel Hill. He enjoys
