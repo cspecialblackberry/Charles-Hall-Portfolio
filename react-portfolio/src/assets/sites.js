@@ -17,18 +17,19 @@ export const sites = [
     },
     {
         id: 3,
+        name: 'Weather Forecast',
+        link: 'https://cspecialblackberry.github.io/5-Day-Weather-Forecast/',
+        repo: 'https://github.com/cspecialblackberry/5-Day-Weather-Forecast',
+        description: '5 Day Weather Forecast allows users to see a five day forecast of any city they search for. Past searches will appear in the search history section.',
+        img: 'src/assets/weatherForecast.png',
+    },
+    {
+        id: 4,
         name: 'JavaScript Brain Trip!',
         link: 'https://cspecialblackberry.github.io/JavaScript-Quiz-Game/',
         repo: 'https://github.com/cspecialblackberry/JavaScript-Quiz-Game',
         description: 'JavaScript Brain Trip is a simple quiz site that allows JS developers to test their knowledge of their language! Users must get all 10 questions correct within the time limit to win.',
         img: 'src/assets/javascriptBrainTrip.png',
     },
-    {
-        id: 4,
-        name: 'Weather Forecast',
-        link: 'https://cspecialblackberry.github.io/5-Day-Weather-Forecast/',
-        repo: 'https://github.com/cspecialblackberry/5-Day-Weather-Forecast',
-        description: 'This site allows user to see a 5 day forecast of any city they enter. Past searches will appear in the search history section.',
-        img: 'src/assets/weatherForecast.png',
-    },
+   
 ]
