@@ -31,5 +31,21 @@ export const sites = [
         description: 'JavaScript Brain Trip is a simple quiz site that allows JS developers to test their knowledge of their language! Users must get all 10 questions correct within the time limit to win.',
         img: '/javascriptBrainTrip.png',
     },
+    {
+        id: 5,
+        name: 'Work Day Scheduler',
+        link: 'https://cspecialblackberry.github.io/To-Do-Calendar/',
+        repo: 'https://github.com/cspecialblackberry/To-Do-Calendar',
+        description: 'The work day scheduler allows users to input to do items for their day in an hour by hour format. Hours that have passed appear gray, the current hour appears red and coming hours appear green. Tasks are saved to local storage.',
+        img: '/workDayScheduler.png',
+    },
+    {
+        id: 6,
+        name: 'Password Generator',
+        link: 'https://cspecialblackberry.github.io/Password-Generator/',
+        repo: 'https://github.com/cspecialblackberry/Password-Generator',
+        description: 'The password generator allows users to generate a password based on various criteria they can select. Upon pressing the button, users will be prompted to input a length, and asked if they want lowercase, uppercase, special, and numeric characters.',
+        img: '/passwordGenerator.png',
+    },
    
 ]
