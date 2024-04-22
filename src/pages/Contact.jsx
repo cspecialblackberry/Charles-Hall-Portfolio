@@ -5,11 +5,13 @@ export default function Contact() {
     const [isNameEntered, setIsNameEntered] = useState('')
     const [nameValue, setNameValue] = useState('')
 
+    //save entered value
     const handleNameChange = (event) => {
         setNameValue(event.target.value)
         setIsNameEntered(true)
     }
 
+    //check for value for conditional rendering
     const handleNameBlur = () => {
         if (!nameValue) {
             setIsNameEntered(false)
@@ -22,11 +24,13 @@ export default function Contact() {
     const [emailValue, setEmailValue] = useState('')
     const [isValidEmail, setIsValidEmail] = useState(true)
 
+    //save entered value
     const handleEmailChange = (event) => {
         setEmailValue(event.target.value)
         setIsEmailEntered(true)
     }
 
+    //check for value or valid email for conditional rendering
     const handleEmailBlur = () => {
         if (!emailValue) {
             setIsEmailEntered(false)
@@ -39,11 +43,13 @@ export default function Contact() {
     const [isMessageEntered, setIsMessageEntered] = useState('')
     const [messageValue, setMessageValue] = useState('')
 
+    //save entered value
     const handleMessageChange = (event) => {
         setMessageValue(event.target.value)
         setIsMessageEntered(true)
     }
 
+    //check for value for conditional rendering
     const handleMessageBlur = () => {
         if (!messageValue) {
             setIsMessageEntered(false)

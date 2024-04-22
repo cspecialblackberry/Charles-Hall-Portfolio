@@ -185,14 +185,19 @@ nav{
     font-size: 18px;
 }
 
-.resume{
+.resume, .skills{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 25px;
+    text-align: center;
 }
 
-.resume h1{
+.skills{
+    padding-bottom: 65px;
+}
+
+.resume h1, .skills h1{
     font-size: 40px;
     font-weight: 600;
 }
@@ -201,6 +206,15 @@ nav{
     font-size: 30px;
     text-decoration: underline;
     margin-top: 25px;
+}
+
+.skills table, .skills table th, .skills table td{
+    border: 1px solid var(--darkgreen);
+    padding: 5px;
+} 
+
+.skills table th, .skills table td{
+    width: 180px;
 }
 
 footer{
