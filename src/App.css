@@ -71,7 +71,7 @@ nav{
 .image-div img {
     height: 260px;
     padding: 40px;
-    background-color: var(--medgreen);
+    background-color: var(--lightgreen);
     border-radius: 30px;
 }
 
@@ -232,6 +232,7 @@ footer a {
     .about-div{
         flex-direction: column;
         padding: 0px;
+        padding-bottom: 65px;
     }
 
     .image-div{
