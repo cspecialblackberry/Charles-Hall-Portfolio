@@ -269,8 +269,11 @@ footer a {
     }
 
     .resume h1{
-        text-align: center;
         padding: 10px;
         margin-bottom: 50px;
+    }
+
+    .skills{
+        padding: 10px;
     }
 }
