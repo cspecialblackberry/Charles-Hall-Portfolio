@@ -25,7 +25,7 @@ export const sites = [
     },
     {
         id: 4,
-        name: 'JavaScript Brain Trip!',
+        name: 'JavaScript Brain Trip',
         link: 'https://cspecialblackberry.github.io/JavaScript-Quiz-Game/',
         repo: 'https://github.com/cspecialblackberry/JavaScript-Quiz-Game',
         description: 'JavaScript Brain Trip is a simple quiz site that allows JS developers to test their knowledge of their language! Users must get all 10 questions correct within the time limit to win.',
